@@ -12,7 +12,9 @@ Screenshots use synthetic archives and passwords. [Download](https://github.com/
 
 Everything needed for recovery is included. No installation of Homebrew, Python or developer tools is required.
 
-<details><summary>First launch</summary>
+<details><summary>Installer and first launch</summary>
+
+<img src="images/install.jpg" width="580" alt="BinaryBears drag-to-Applications installer">
 
 <img src="images/welcome.jpg" width="620" alt="Authorized-use notice">
 <img src="images/first-benchmark.jpg" width="420" alt="Optional first-launch benchmark">
