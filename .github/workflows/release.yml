@@ -29,6 +29,8 @@ jobs:
           scripts/build-app.sh
           python3 -m venv .local/packaging-venv
           .local/packaging-venv/bin/pip install -r packaging/requirements.txt
+      - name: Verify pattern generation with the bundled engine
+        run: ZIPRIPPER_RUNTIME="$PWD/.local/runtime" swift test --filter PasswordPatternTests
       - name: Set up ephemeral Apple signing
         env:
           APPLE_API_KEY_BASE64: ${{ secrets.APPLE_API_KEY_BASE64 }}

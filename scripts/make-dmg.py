@@ -63,7 +63,8 @@ def main():
             alias.volume.posix_path = '/Volumes/ZipRipper Installer'
             alias.volume.disk_image_alias = None
             bounds = layout['finder']['windowBounds']
-            window_bounds = '{{%d, %d}, {%d, %d}}' % (bounds[0], bounds[1], bounds[2] - bounds[0], bounds[3] - bounds[1])
+            # Finder bounds include the title bar; retain the full template canvas.
+            window_bounds = '{{%d, %d}, {%d, %d}}' % (bounds[0], bounds[1], bounds[2] - bounds[0], bounds[3] - bounds[1] + 32)
             with DSStore.open(str(mount / '.DS_Store'), 'w+') as store:
                 store['.']['bwsp'] = {'ShowToolbar': False, 'ShowStatusBar': False,
                     'ShowPathbar': False, 'ShowSidebar': False, 'ContainerShowSidebar': False,
