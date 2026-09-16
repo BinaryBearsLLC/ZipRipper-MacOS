@@ -1,0 +1,101 @@
+[
+  {
+    "file": "zip-traditional.zip",
+    "name": "ZIP traditional",
+    "format": "PKZIP",
+    "password": "CopperFalcon981!",
+    "wordlistLine": 981,
+    "sha256": "f4c6c77b612018e2d922db85252fe5d0178e6fd71a5e73708808cff29b3d9710",
+    "pdfRevision": null
+  },
+  {
+    "file": "zip-aes256.zip",
+    "name": "ZIP AES-256",
+    "format": "ZIP",
+    "password": "AmberOtter985!",
+    "wordlistLine": 985,
+    "sha256": "3fc865ae2d8065a8e1634871fe0216c713bb3c6e59791677dd7f1edce96fe934",
+    "pdfRevision": null
+  },
+  {
+    "file": "seven-header.7z",
+    "name": "7z encrypted headers",
+    "format": "7z",
+    "password": "SilverMaple989!",
+    "wordlistLine": 989,
+    "sha256": "99e6a57e3a5e8991df1784db97f43e9c707dc6207fd91d59f4c254334af2be03",
+    "pdfRevision": null
+  },
+  {
+    "file": "seven-data.7z",
+    "name": "7z encrypted data",
+    "format": "7z",
+    "password": "VioletRobin993!",
+    "wordlistLine": 993,
+    "sha256": "15851c1aba643de1cbfe32e026cdb56df10a2aff48292303aa9fca2574f47957",
+    "pdfRevision": null
+  },
+  {
+    "file": "rar3-header.rar",
+    "name": "RAR3 encrypted headers",
+    "format": "rar",
+    "password": "GoldenBadger997!",
+    "wordlistLine": 997,
+    "sha256": "1205bae4fe189cdddf9b6907c3afabe984232339f0d16041602e6f54c212bfc4",
+    "pdfRevision": null
+  },
+  {
+    "file": "rar5-header.rar",
+    "name": "RAR5 encrypted headers",
+    "format": "RAR5",
+    "password": "CrimsonPanda1001!",
+    "wordlistLine": 1001,
+    "sha256": "7613a536e862af2cc3ff4711ea1a0f481ebfe4c56913a9772eaa4f4af215c3bd",
+    "pdfRevision": null
+  },
+  {
+    "file": "pdf-r2.pdf",
+    "name": "PDF R2 \u00b7 RC4 40-bit",
+    "format": "PDF",
+    "password": "IndigoHeron1005!",
+    "wordlistLine": 1005,
+    "sha256": "61756171fd9040cfea1243c0ca09b9a11d82e55ce8ddecccb07292def0a8f4a1",
+    "pdfRevision": 2
+  },
+  {
+    "file": "pdf-r3.pdf",
+    "name": "PDF R3 \u00b7 RC4 128-bit",
+    "format": "PDF",
+    "password": "ScarletWillow1009!",
+    "wordlistLine": 1009,
+    "sha256": "3b93e8578a308156735395bf360e82054f6c18d15742524ab594c1f144917a4f",
+    "pdfRevision": 3
+  },
+  {
+    "file": "pdf-r4.pdf",
+    "name": "PDF R4 \u00b7 AES-128",
+    "format": "PDF",
+    "password": "AzureFox1013!",
+    "wordlistLine": 1013,
+    "sha256": "3fabac9c0cee59be54242e9760416dca9757f2834ca4fdf6eb42c22012d992e3",
+    "pdfRevision": 4
+  },
+  {
+    "file": "pdf-r5.pdf",
+    "name": "PDF R5 \u00b7 AES-256",
+    "format": "PDF",
+    "password": "EmeraldLynx1017!",
+    "wordlistLine": 1017,
+    "sha256": "ea739e516e6ff350bce24f13d7316bfa2ffab3a8f585841a18face6241935a0f",
+    "pdfRevision": 5
+  },
+  {
+    "file": "pdf-r6.pdf",
+    "name": "PDF R6 \u00b7 AES-256",
+    "format": "PDF",
+    "password": "IvoryRaven1021!",
+    "wordlistLine": 1021,
+    "sha256": "b7ec59d1e06265ec88769fd91029e05c02fa9b18ab677a0c6339aa7bc032e141",
+    "pdfRevision": 6
+  }
+]

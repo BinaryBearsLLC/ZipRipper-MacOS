@@ -1,0 +1,20 @@
+name: Checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  test:
+    runs-on: macos-15
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - run: python3 scripts/audit-public.py
+      - run: swift test
+      - run: bash -n scripts/build-app.sh scripts/build-runtime.sh
+      - run: python3 -m py_compile scripts/*.py

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fafbfc">
+  <meta name="description" content="ZipRipper for macOS. Local password recovery for ZIP, RAR, 7z and PDF. A ready-to-use Apple Silicon app with CPU and Metal engines.">
+  <title>ZipRipper — BinaryBears</title>
+  <link rel="icon" href="assets/archive.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="files" aria-hidden="true">
+    <div class="file f1"><img src="assets/archive.svg" alt=""><span>ZIP</span></div>
+    <div class="file f2"><img src="assets/document.svg" alt=""><span>PDF</span></div>
+    <div class="file f3"><img src="assets/archive.svg" alt=""><span>7Z</span></div>
+    <div class="file f4"><img src="assets/archive.svg" alt=""><span>RAR</span></div>
+    <div class="file f5"><img src="assets/document.svg" alt=""><span>PDF</span></div>
+    <div class="file f6"><img src="assets/archive.svg" alt=""><span>ZIP</span></div>
+  </div>
+  <header>
+    <h1 class="wordmark">ZipRipper<span>BY BINARYBEARS</span></h1>
+    <nav aria-label="Project links">
+      <a class="download" href="https://github.com/BinaryBearsLLC/ZipRipper-MacOS/releases/latest">Download <span aria-hidden="true">↗</span></a>
+      <a class="source" href="https://github.com/BinaryBearsLLC/ZipRipper-MacOS">Source <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <div class="intro"><span class="line"></span> YOUR FILES. YOUR ACCESS. <span class="line"></span></div>
+    <figure class="app" aria-label="Explore ZipRipper's four sections">
+      <img class="screenshot" src="assets/app.jpg" alt="ZipRipper 0.5.3: a bear mascot with Recovery, Sessions, Engine and About controls." width="600" height="620" fetchpriority="high">
+      <button class="hotspot recovery" data-section="recovery" aria-label="About Recovery" aria-controls="feature" aria-expanded="false"></button>
+      <button class="hotspot sessions" data-section="sessions" aria-label="About Sessions" aria-controls="feature" aria-expanded="false"></button>
+      <button class="hotspot engine" data-section="engine" aria-label="About Engine" aria-controls="feature" aria-expanded="false"></button>
+      <button class="hotspot about" data-section="about" aria-label="About ZipRipper" aria-controls="feature" aria-expanded="false"></button>
+    </figure>
+    <aside id="feature" class="feature" role="status" aria-live="polite" aria-atomic="true">
+      <span class="feature-number"></span><h2></h2><p></p>
+    </aside>
+    <p class="hint">Hover, focus or tap a sphere to explore.</p>
+  </main>
+  <footer><span>ZIP / RAR / 7Z / PDF</span><span>macOS 13+ · Apple Silicon · v0.5.3</span></footer>
+</body>
+</html>

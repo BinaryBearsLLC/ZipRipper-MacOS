@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "githubMirrorBaseURL": "https://github.com/BinaryBearsLLC/ZipRipper-MacOS/releases/download/runtime-sources-2026-09",
+  "dependencies": [
+    {
+      "id": "john",
+      "version": "9a336d800a091bec9650c29282485145f31c9ffc",
+      "filename": "john-9a336d800a091bec9650c29282485145f31c9ffc.tar.gz",
+      "originalURL": "https://codeload.github.com/openwall/john/tar.gz/9a336d800a091bec9650c29282485145f31c9ffc",
+      "sha256": "9b784ff48510d84535aff1c958ebc11f508dbdffea0fb6690d5274d843bf07e8",
+      "license": "GPL-2.0-or-later with OpenSSL/unRAR linking exception; bundled components retain their licenses",
+      "licenseURL": "https://github.com/openwall/john/blob/9a336d800a091bec9650c29282485145f31c9ffc/doc/LICENSE"
+    },
+    {
+      "id": "openssl",
+      "version": "3.6.4",
+      "filename": "openssl-3.6.4.tar.gz",
+      "originalURL": "https://github.com/openssl/openssl/releases/download/openssl-3.6.4/openssl-3.6.4.tar.gz",
+      "sha256": "9bffaa1ad1e07b354c21bd3324ec02fa15579f45a7d0494b3e74bc449b7333ef",
+      "license": "Apache-2.0",
+      "licenseURL": "https://github.com/openssl/openssl/blob/openssl-3.6.4/LICENSE.txt"
+    },
+    {
+      "id": "perl",
+      "version": "5.42.2",
+      "filename": "perl-5.42.2.tar.gz",
+      "originalURL": "https://www.cpan.org/src/5.0/perl-5.42.2.tar.gz",
+      "sha256": "9384e8deb75b7b1695e5637971b752281aaecd025a3d5d4734d33c1d0adfee47",
+      "license": "Artistic-1.0-Perl OR GPL-1.0-or-later; bundled modules retain their licenses",
+      "licenseURL": "https://dev.perl.org/licenses/"
+    },
+    {
+      "id": "xz",
+      "version": "5.8.2",
+      "filename": "xz-5.8.2.tar.gz",
+      "originalURL": "https://github.com/tukaani-project/xz/releases/download/v5.8.2/xz-5.8.2.tar.gz",
+      "sha256": "ce09c50a5962786b83e5da389c90dd2c15ecd0980a258dd01f70f9e7ce58a8f1",
+      "license": "0BSD for liblzma; see COPYING for build tools",
+      "licenseURL": "https://github.com/tukaani-project/xz/blob/v5.8.2/COPYING"
+    },
+    {
+      "id": "perl-lzma",
+      "version": "2.214",
+      "filename": "Compress-Raw-Lzma-2.214.tar.gz",
+      "originalURL": "https://www.cpan.org/authors/id/P/PM/PMQS/Compress-Raw-Lzma-2.214.tar.gz",
+      "sha256": "1dcc4448969acad4550376476e3fcd2ed96bfaaae7d9622958fd8f9a1ab4c87d",
+      "license": "Artistic-1.0-Perl OR GPL-1.0-or-later",
+      "licenseURL": "https://metacpan.org/release/PMQS/Compress-Raw-Lzma-2.214/source/README"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+name: Signed release
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Publish the verified version as a GitHub release
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  macos:
+    if: github.repository == 'BinaryBearsLLC/ZipRipper-MacOS' && github.ref == 'refs/heads/main'
+    runs-on: macos-15
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Check source
+        run: |
+          test "$(uname -m)" = arm64
+          python3 scripts/audit-public.py
+          swift test
+      - name: Build pinned runtime and app
+        run: |
+          scripts/build-runtime.sh --source github --jobs 3
+          scripts/build-app.sh
+          python3 -m venv .local/packaging-venv
+          .local/packaging-venv/bin/pip install -r packaging/requirements.txt
+      - name: Set up ephemeral Apple signing
+        env:
+          APPLE_API_KEY_BASE64: ${{ secrets.APPLE_API_KEY_BASE64 }}
+          APPLE_API_KEY_ID: ${{ secrets.APPLE_API_KEY_ID }}
+          APPLE_API_ISSUER_ID: ${{ secrets.APPLE_API_ISSUER_ID }}
+          APPLE_CERTIFICATE_P12_BASE64: ${{ secrets.APPLE_CERTIFICATE_P12_BASE64 }}
+          APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+          APPLE_SIGNING_IDENTITY: ${{ secrets.APPLE_SIGNING_IDENTITY }}
+        run: python3 scripts/ci-signing.py setup
+      - name: Sign, notarize, staple and verify
+        run: .local/packaging-venv/bin/python scripts/release.py
+      - name: Remove temporary signing material
+        if: always()
+        run: python3 scripts/ci-signing.py cleanup
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: ZipRipper-macOS-arm64
+          path: |
+            dist/packages/ZipRipper-0.5.3-macOS-arm64.dmg
+            dist/packages/SHA256SUMS.txt
+            dist/packages/release-verification.json
+          if-no-files-found: error
+  publish:
+    if: inputs.publish
+    needs: macos
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: ZipRipper-macOS-arm64
+          path: release
+      - name: Publish verified artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create v0.5.3 --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+            --title "ZipRipper 0.5.3" --notes "Ready-to-use Apple Silicon release for macOS 13+. Developer ID signed, notarized and stapled. Download the DMG, drag ZipRipper to Applications, then open it. See the repository user guide for search strategies, Metal support and local data handling." \
+            release/ZipRipper-0.5.3-macOS-arm64.dmg release/SHA256SUMS.txt release/release-verification.json

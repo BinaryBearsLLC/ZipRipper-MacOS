@@ -1,0 +1,5 @@
+ZipRipper for macOS — Copyright (C) 2026 BinaryBears LLC.
+Original application code: GNU General Public License, version 3 or later.
+Third-party components retain their own licenses.
+BinaryBears names, logos and artwork are not covered by the software license.
+For authorized local password recovery only.

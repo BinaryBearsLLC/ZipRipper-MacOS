@@ -1,0 +1,82 @@
+[
+  {
+    "id": "zip-traditional",
+    "name": "ZIP traditional",
+    "format": "PKZIP",
+    "hashLine": "benchmark:$pkzip$1*1*2*0*53*2e8*1966ace2*0*29*8*53*1966*60281e221778d68def97f0a603ee519bb461073c2ee80aeb695836bdc5875e1744a36fd4c8c6c892916fbfbec5f3b12c03594c27e1604c2229f7d89adb6312fc7d78bea913b408941dd59238b63c3a57479fc4*$/pkzip$",
+    "password": "CopperFalcon981!",
+    "metal": true
+  },
+  {
+    "id": "zip-aes256",
+    "name": "ZIP AES-256",
+    "format": "ZIP",
+    "hashLine": "benchmark:$zip2$*0*3*0*35b72c629bca7c60d72b0597cadbdab7*5c5a*47*346d9beb732b3990e27e628bcea1efce94259ad898965bbf0bc7f07c9df65a4a46b28033c3bfc95a75002f831363811022703e15396466c3fdc5f2779de96526dfe93c45087fe5*9fcf06ab852f0fe3761e*$/zip2$",
+    "password": "AmberOtter985!",
+    "metal": true
+  },
+  {
+    "id": "seven-header",
+    "name": "7z encrypted headers",
+    "format": "7z",
+    "hashLine": "benchmark:$7z$0$19$0$$16$f4214b34b87506391c7e2d54be3d52e9$3756138033$128$114$a55c57a676aa2db4920daa08af139247232862f076d92e86a0b36699af0b70e447d22f5be38415164c5af3492e270cd2ad494b2915676ed9d8a5592bdf67829c71d08ea123646ed8b2cf382d891ab57ec43df9755d3ff1d47567f8b6bab8a148795941af1ac8c25dbc77f1bf39c8560c8b2b54cdba0177eab809258321e7f43f",
+    "password": "SilverMaple989!",
+    "metal": true
+  },
+  {
+    "id": "rar3-header",
+    "name": "RAR3 encrypted headers",
+    "format": "rar",
+    "hashLine": "benchmark:$RAR3$*0*9a22a9e31a6aa1eb*3248924577174cfe993ec48fdb8a0992",
+    "password": "GoldenBadger997!",
+    "metal": true
+  },
+  {
+    "id": "rar5-header",
+    "name": "RAR5 encrypted headers",
+    "format": "RAR5",
+    "hashLine": "benchmark:$rar5$16$f9877fa591ac2bb9a2edac93ace5ca97$15$6755edf16f32ae683de3cee4654d3f39$8$ef5ad571b5f1ec5a",
+    "password": "CrimsonPanda1001!",
+    "metal": true
+  },
+  {
+    "id": "pdf-r2",
+    "name": "PDF R2 \u00b7 RC4 40-bit",
+    "format": "PDF",
+    "hashLine": "benchmark:$pdf$1*2*40*4294967292*1*32*6661343664313035636530343065363565633361663961373765383264376166*32*4e3b60f3394e5406ebc9c9b760d51971629e582c42f4f12da9e7ffc6ddea7a3a*32*5ee6054809393f56480805cd6e287c7775084050992c1ef7248582f1fa2e2b88",
+    "password": "IndigoHeron1005!",
+    "metal": true
+  },
+  {
+    "id": "pdf-r3",
+    "name": "PDF R3 \u00b7 RC4 128-bit",
+    "format": "PDF",
+    "hashLine": "benchmark:$pdf$2*3*128*4294967292*1*32*3535636439633564333036323166316533613336613434623862666166316633*32*6ce055598968ce7e4a4d9f257e98b2f528bf4e5e4e758a4164004e56fffa0108*32*0a84ddc7e6f1165bd925c74a1b5f00a5359153351f2cb2f14528f719e5ef5b93",
+    "password": "ScarletWillow1009!",
+    "metal": true
+  },
+  {
+    "id": "pdf-r4",
+    "name": "PDF R4 \u00b7 AES-128",
+    "format": "PDF",
+    "hashLine": "benchmark:$pdf$4*4*128*4294967292*1*32*6530313630613536383465393535303137373139616463323639303064616465*32*6953e4bacdc5ce99d30c8c89f1bdf5c828bf4e5e4e758a4164004e56fffa0108*32*85f488e197ed1ee137a9ff5303a388a67bdff6a3135111bb895ae25259420bf9",
+    "password": "AzureFox1013!",
+    "metal": true
+  },
+  {
+    "id": "pdf-r5",
+    "name": "PDF R5 \u00b7 AES-256",
+    "format": "PDF",
+    "hashLine": "benchmark:$pdf$5*5*256*4294967292*1*32*6536643833323462363832326631353635623738633932393738643239326433*48*935035c481f55285ec9c536ef824cb0b371d58f3e4f8c334e4307506cc5eea66e4150806e1117ebfaf0ba7e79daaaf1a*48*ce061ed55f85e3c8357604b64cb39f9186c797358525a863f5bc59c2fbd71e278c0629ff7f4e3c3856b27ab9659d734f*32*0ecc0144849895740031f74452b3d512d7bef30cf75c07a5943fa1be3753f61d*32*f95198ffa9dc2853f245d07f0578f82957bbf07a39f7095701acbce95589c562",
+    "password": "EmeraldLynx1017!",
+    "metal": true
+  },
+  {
+    "id": "pdf-r6",
+    "name": "PDF R6 \u00b7 AES-256",
+    "format": "PDF",
+    "hashLine": "benchmark:$pdf$5*6*256*4294967292*1*32*3164616332326663383539326638303966393538373739616262363030636432*48*4532cc126f94ef1c42d2d3687805a53dd41e5cc65b063252ce5db2d410d6e00c1c9f1bd1ed771565b111599808d8c2ee*48*2fb4a5d2113937bbf5f9b3f0db73a73ce2aa36dee15b0dc9f3c0e8ce34260691768ddc90720915e33e680464a166057e*32*4df1104e0c9853bc206c1b4009b496d88947e76a4134db6c02b9b20121d1045a*32*b3e95fc81b2d6fea3232b9c3d5c85a69b397f73e1526fc2b19b6f8d74924840b",
+    "password": "IvoryRaven1021!",
+    "metal": false
+  }
+]
